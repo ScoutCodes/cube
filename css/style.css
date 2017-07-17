@@ -36,8 +36,7 @@ body {
   position: absolute;
   width: 10em;
   height: 10em;
-  border: 1px solid white;
-  opacity: .5;
+  opacity: .7;
 }
 .side.back,
 .side.front,
@@ -46,7 +45,7 @@ body {
 .side.left,
 .side.right {
   background: deeppink;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .back {
@@ -110,7 +109,19 @@ body {
 }
 
 @keyframes rotate {
+  0% {
+    transform: rotateY(120deg);
+  }
+  25% {
+    transform: translate(100px, 100px);
+  }
+  50% {
+    transform: rotateX(120deg);
+  }
+  75% {
+    transform: translate(-100px, -100px);
+  }
   100% {
-    transform: rotateX(360deg);
+    transform: rotateY(120deg);
   }
 }
